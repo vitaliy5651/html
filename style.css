@@ -5,6 +5,7 @@
 body {
   background:white;
   margin: 0;
+  font-family: 'Poppins';
 }
 .aside{
     width: 150px;
@@ -17,7 +18,7 @@ body {
     padding: 10px;
 }
 
-.content{
+.main-content{
 margin-left: 150px;
 padding: 50px;
 background-color: white;
@@ -136,5 +137,21 @@ letter-spacing: 0.8px;
     fill: white;
     width: 35px;
     opacity: 0.3;
+    text-align: center;
+}
+.services{
+    display: flex;
+}
+.services > .item{
+    margin: 0 30px;
+    border-radius: 6px;
+    background-color: #f6f6f6;
+    padding: 0 62px;
+    text-align: center;
+}
+.services .item-title{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #353a3f;
     text-align: center;
 }
