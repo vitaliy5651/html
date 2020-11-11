@@ -172,7 +172,7 @@ letter-spacing: 0.8px;
 }
 .services .icon svg{
     width: 40px;
-    fill: #4cb488;
+    fill: #4cb84c;
 }
 .toggle{
     width: 0;
@@ -181,4 +181,33 @@ letter-spacing: 0.8px;
 }
 .toggle:checked ~ ul{
    display: none;
+}
+.blog{
+padding: 40px;
+}
+.blog__heading{
+text-transform: uppercase;
+font-size: 44px;
+}
+.post-preview{
+
+    display: flex;
+    margin-bottom: 30px;
+}
+.post-preview__desc{
+    padding: 20px 20px 20px 40px;
+}
+.post-preview:last-child{
+    margin-bottom: 0;
+}
+.post-preview__img{
+    flex-shrink: 0;
+    flex-basis: 565px;
+}
+.post-preview__img img{
+    display: block;
+    object-fit: cover;
+    max-height: 360px;
+    height: 100%;
+    width: 100%;
 }
