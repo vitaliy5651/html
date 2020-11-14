@@ -140,7 +140,7 @@ letter-spacing: 0.8px;
     text-align: center;
 }
 .services{
-    display: flex;
+    flex-direction: column;
 }
 .services > .item{
     margin: 0 30px;
@@ -210,4 +210,26 @@ font-size: 44px;
     max-height: 360px;
     height: 100%;
     width: 100%;
+}
+@media(max-width:1200px){
+    .services{
+        flex-direction: column;
+    }
+}
+@media(max-width:640px){
+    .aside{
+        width: 150px;
+        height: 100vh;
+        background-color: #282d32;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        left: 0;
+        padding: 10px;
+    }   
+    .main-content{
+    margin-left: 150px;
+    padding: 50px;
+    background-color: white;
+    }
 }
