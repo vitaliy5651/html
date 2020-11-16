@@ -1,0 +1,22 @@
+{
+  "name": "html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitaliy5651/html.git"
+  },
+  "author": "Vitaliy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitaliy5651/html/issues"
+  },
+  "homepage": "https://github.com/vitaliy5651/html#readme",
+  "dependencies": {
+    "sass": "^1.29.0"
+  }
+}
