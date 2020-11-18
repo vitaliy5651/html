@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+     "dev": "npx sass --watch -s compressed src/scss/main.scss ./style.css"
   },
   "repository": {
     "type": "git",
