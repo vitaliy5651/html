@@ -1,0 +1,18 @@
+.logo{
+    font-size: 32px;
+    color: #4cb488;
+    text-transform: uppercase;
+    margin-top: 37px;
+}
+.logo::after{
+    display: block;
+    content: "";
+    width: 25px;
+    height: 4px;
+    border-radius: 2px;
+    background: #4cb488;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 7px;
+}
+   
