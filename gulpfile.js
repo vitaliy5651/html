@@ -21,6 +21,7 @@ function watch() {
         }
     });
     gulp.watch('src/scss/**/*.scss', style)
+    gulp.watch('index.html').on('change', browserSync.reload);
 }
 
 exports.watch = watch;
