@@ -1,6 +1,10 @@
 .nav{
     position: relative;
     margin-top: 56px;
+    @at-root .nav--footer &{
+        display: flex;
+        margin-bottom: 0;
+    }
   }
   .nav > ul{
     list-style: none;
