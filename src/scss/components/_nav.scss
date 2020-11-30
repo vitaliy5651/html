@@ -1,20 +1,23 @@
 .nav{
     position: relative;
     margin-top: 56px;
-    @at-root .nav--footer &{
-        display: flex;
-        margin-bottom: 0;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        
+
+        li {
+
+            a {
+                text-decoration: none;
+                color: #ffffff;
+            }
+        }
     }
-  }
-  .nav > ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
 }
-.nav  ul li a{
-    text-decoration: none;
-    color: #ffffff;
-}
+
 .nav::before, .nav::after{
     display: block;
     content: "";
