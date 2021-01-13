@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/vitaliy5651/html#readme",
   "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.5.1",
     "sass": "^1.29.0"
   },
   "devDependencies": {
