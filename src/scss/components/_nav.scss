@@ -35,7 +35,7 @@
         bottom: 0;
         margin-top: 42px;
 }
-.Work > a{
+.Work > a {
     width: 52px;
     height: 12px;
     opacity: 0.5;
@@ -46,8 +46,9 @@
     line-height: 31.2px;
     text-transform: uppercase;
     letter-spacing: 0.8px;
-}
-.About > a{
+  }
+  
+  .About > a {
     width: 58px;
     height: 12px;
     opacity: 0.5;
@@ -58,8 +59,9 @@
     line-height: 31.2px;
     text-transform: uppercase;
     letter-spacing: 0.8px;
-}
-.Serveces > a{
+  }
+  
+  .Services > a {
     width: 78px;
     height: 12px;
     opacity: 0.5;
@@ -70,8 +72,9 @@
     line-height: 31.2px;
     text-transform: uppercase;
     letter-spacing: 0.8px;
-}
-.Blog > a{
+  }
+  
+  .Blog > a {
     width: 44px;
     height: 12px;
     opacity: 0.5;
@@ -82,8 +85,9 @@
     line-height: 31.2px;
     text-transform: uppercase;
     letter-spacing: 0.8px;
-}
-.Contact > a{
+  }
+  
+  .Contact > a {
     width: 82px;
     height: 12px;
     opacity: 0.5;
@@ -94,33 +98,29 @@
     line-height: 31.2px;
     text-transform: uppercase;
     letter-spacing: 0.8px;
-}
-.search svg{
+  }
+  
+  .search svg {
     fill: white;
     width: 35px;
     opacity: 0.3;
     text-align: center;
-}
-.toggle{
+  }
+  
+  .toggle {
     width: 0;
     height: 0;
     visibility: hidden;
-}
-.toggle:checked ~ ul{
-   display: none;
-}
-.Work{
+  
+    &:checked ~ ul {
+      display: none;
+    }
+  }
+  
+  .Work {
     margin-top: 2px;
-}
-.About{
+  }
+  
+  .About, .Services, .Blog, .Contact {
     margin-top: 20px;
-}
-.Serveces{
-    margin-top: 20px;
-}
-.Blog{
-    margin-top: 20px;
-}
-.Contact{
-    margin-top: 20px;
-}
+  }
