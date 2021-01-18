@@ -1,0 +1,22 @@
+//- form
+//-   .form-group
+//-     label(for='formGroupExampleInput') Example label
+//-     input#formGroupExampleInput.form-control(type='text' placeholder='Example input')
+//-   .form-group
+//-     label(for='formGroupExampleInput2') Another label
+//-     input#formGroupExampleInput2.form-control(type='text' placeholder='Another input')
+extends layout
+
+block content
+    .container
+        .row
+            .col
+                form
+                    .form-group
+                        label(for='firstname') Name
+                        input#firstname.form-control(type='text' placeholder='firstname')
+                    .form-group
+                        label(for='lastname') LastName
+                        input#lastname.form-control(type='text' placeholder='lastname')
+                    .form-group
+                         button.btn.btn-primary Add    
