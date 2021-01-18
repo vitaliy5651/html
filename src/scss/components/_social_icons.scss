@@ -1,0 +1,28 @@
+.social-icons {
+    margin-left: 20px;
+    margin-left: 1173px;
+    position: relative;
+    bottom: 61px;
+    &__list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+        &-item1 {
+            margin: 0 5px;
+        }
+        &-item2{
+            margin: 2px 16px;
+        }
+        &-item3{
+            margin-left: 11px;
+        }
+    }
+
+    svg {
+        display: block;
+        fill: white;
+        width: 35px;
+    }
+}

@@ -1,16 +1,30 @@
 .blog {
-    padding: 40px;
-    height: 1500px;
+  padding: 120px;
+  height: 1496px;
   }
   
   .blog__heading {
     text-transform: uppercase;
-    font-size: 44px;
+    font-size: 46px;
+    margin-top: 20px;
+    margin-bottom: 71px;
+    font-weight: bold;
+     
+    &::before{
+      display: block;
+      content: " ";
+      width: 60px;
+      height: 4px;
+      border-radius: 2px;
+      background-color: #4cb480;
+      position: relative;
+      margin: -19px 0px 26px 3px;
+     }
   }
   
   .post-preview {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 61px;
   }
   
   .post-preview__desc {
@@ -32,4 +46,13 @@
       height: 100%;
       width: 100%;
     }
+  }
+  .post-preview__title{
+    color: #353a3f;
+    font-size: 29px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-top: 15px;
+    margin-left: 38px;
   }
