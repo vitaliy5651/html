@@ -1,7 +1,8 @@
-const { response } = require('express');
 const express = require('express');
 const app = express();
 const { Client } = require('pg');
+const bodyParser = require('body-Parser');
+
 
 const client = new Client({
 	connectionString: 'postgres://hdfevoewigwnim:4ab6df38fe15be40a8488f7a1619605f55dae7241e9d35d5e24b092aa042ce2a@ec2-34-252-98-12.eu-west-1.compute.amazonaws.com:5432/d4la33od7ugl70',
@@ -28,7 +29,8 @@ client.connect(err => {
 
 app.set('view engine', 'pug');
 
-app.use(express.static('dist'));
+app.use(express.static('public'));
+app.use(bodyParser.json());
 
 app.get('/', function(req, res){
     res.send('Hello');
@@ -55,6 +57,18 @@ app.get('/adduser', function(req,res){
     res.render('addUser');
 })
 
+
+app.post('/createuser', function(req,res){
+    client.query(`INSERT 
+                  INTO Persons (firstname, lastname) 
+                   VALUES('${req.body.firstname}','${req.body.lastname}')`,(err, result) => {
+                       if(err){
+                           res.status(500).json({error: err.stack})
+                       }else{
+                           res.status(200).json({response: result})
+                       }
+                   });
+});
 
 app.listen(3000, function() {
     console.log('success');
