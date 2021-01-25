@@ -294,16 +294,18 @@ body {
 .feedback__text {
   color: #ffffff;
   font-size: 28px;
-  padding-top: 200px;
-  padding-left: 330px;
-  width: 80%;
-  font-style: italic; }
+  padding-top: 138px;
+  padding-left: 324px;
+  width: 76%;
+  font-style: italic;
+  line-height: 38.02px;
+  letter-spacing: 0.42px; }
 
-.left-quote {
+.quotes {
   width: 48px;
   height: 39px;
   position: relative;
-  top: 173px;
+  top: 144px;
   left: 322px; }
 
 .author {
@@ -313,7 +315,7 @@ body {
   font-size: 20px;
   font-weight: bold;
   line-height: 30.02px;
-  margin-left: 320px; }
+  margin-left: 326px; }
   .author::before {
     display: block;
     content: " ";
@@ -321,26 +323,35 @@ body {
     height: 4px;
     border-radius: 2px;
     background-color: #8c9198;
-    margin-bottom: 20px;
-    margin-top: 60px; }
+    margin-bottom: 14px;
+    margin-top: 53px; }
 
 .services {
   display: flex;
   width: auto;
-  height: 662px; }
+  height: 691px; }
   .services > .item {
-    margin: 0 30px;
+    margin: 123px 69px;
     border-radius: 6px;
-    background-color: #999898;
-    padding: 0 62px;
+    background-color: #ffffff;
+    padding: 0 57px;
     text-align: center;
     position: relative;
-    margin-top: 60px;
+    left: 54px;
     min-width: 290px; }
   .services .item-title {
     text-transform: uppercase;
     font-size: 30px;
-    color: #353a3f; }
+    color: #353a3f;
+    margin-top: 2px;
+    letter-spacing: 1.5px; }
+  .services .item-desc {
+    margin-bottom: 28px;
+    margin-top: -10px;
+    letter-spacing: 0.45px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px; }
   .services .icon {
     background-color: #ffffff;
     border-radius: 50%;
@@ -350,12 +361,14 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: -55px;
+    top: -47px;
     left: 50%;
     transform: translateX(-50%); }
     .services .icon svg {
       width: 40px;
-      fill: #4cb84c; }
+      fill: #4cb84c;
+      margin-top: -11px;
+      margin-left: -1px; }
 
 @media (max-width: 640px) {
   .main-content {
@@ -403,12 +416,12 @@ body {
 
 .actions > button {
   color: #ffffff;
-  width: 200px;
-  height: 60px;
+  width: 156px;
+  height: 57px;
   border-radius: 30px;
   background-color: #4cb480;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 19px;
   cursor: pointer;
   outline: none;
   border: none;

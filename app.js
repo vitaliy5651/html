@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const { Client } = require('pg');
 const bodyParser = require('body-Parser');
+const { text } = require('body-Parser');
+const { stream } = require('browser-sync');
 
 
 const client = new Client({
@@ -73,3 +75,8 @@ app.post('/createuser', function(req,res){
 app.listen(3000, function() {
     console.log('success');
 });
+
+
+var  text= "#"
+text.length == 8;
+for(let i = 0; i <= 8: i++   ) 
