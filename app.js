@@ -61,6 +61,10 @@ app.get('/adduser', function(req,res){
 
 
 app.post('/createuser', function(req,res){
+    console.log(req.body.firstname);
+    if(req.body.firstname.length < 1 || req.body.lastname.length < 1){
+        return res.status(400).send({error:'Firstname or lastname is empty'});      
+    }
     client.query(`INSERT 
                   INTO Persons (firstname, lastname) 
                    VALUES('${req.body.firstname}','${req.body.lastname}')`,(err, result) => {
@@ -72,7 +76,20 @@ app.post('/createuser', function(req,res){
                    });
 });
 
+
+app.get('/login', function(req,res){
+    res.render('login');
+});
+
+app.post('/login', function(req,res){
+// 
+});
+
 app.listen(3000, function() {
     console.log('success');
 });
+
+
+
+
 
