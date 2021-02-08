@@ -1,18 +1,18 @@
 .logo{
-    font-size: 33px;
     color: #4cb488;
-    text-transform: uppercase;
+    font-size: 33px;
     margin-top: 42px;
+    text-transform: uppercase;
 }
 .logo::after{
-    display: block;
-    content: "";
-    width: 25px;
-    height: 4px;
-    border-radius: 2px;
     background: #4cb488;
+    border-radius: 2px;
+    content: "";
+    display: block;
+    height: 4px;
     margin-left: 50%;
-    transform: translateX(-50%);
     margin-top: 7px;
+    transform: translateX(-50%);
+    width: 25px;
 }
    

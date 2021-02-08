@@ -1,22 +1,22 @@
 .aside{
-    width: 150px;
-    height: 100%;
     background-color: #282d32;
+    height: 100%;
+    left: 0;
+    padding: 10px;
     position: fixed;
     text-align: center;
     top: 0;
-    left: 0;
-    padding: 10px;
+    width: 150px;
 }
 @media (max-width: 640px) {
     .aside{
-      display: flex;
       align-items: center;
-      justify-content: space-between;
-      width: 100%;
       background-color: #282d32;
-      position: relative;
+      display: flex;
       height: auto;
+      justify-content: space-between;
       padding: 10px;
+      position: relative;
+      width: 100%;
     }
 }

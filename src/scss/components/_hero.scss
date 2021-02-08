@@ -1,53 +1,53 @@
 .hero {
-    width: auto;
-    height: 855px;
     background-color: #353a3f;
+    height: 855px;
+    width: auto;
   
     > {
       h1 {
         color: #ffffff;
-        text-transform: uppercase;
-        padding-top: 217px;
-        padding-left: 323px;
-        line-height: 31.2px;
-        font-size: 63px;
         font-family: 'Timesnewroman';
+        font-size: 63px;
+        line-height: 31.2px;
+        padding-left: 323px;
+        padding-top: 217px;
+        text-transform: uppercase;
       }
   
       h2 {
         color: #ffffff;
-        font-weight: bold;
-        text-transform: uppercase;
-        padding-left: 325px;
-        margin-top: 62px;
         font-size: 30px;
+        font-weight: bold;
         letter-spacing: 0.5px;
+        margin-top: 62px;
+        padding-left: 325px;
+        text-transform: uppercase;
       }
   
       p {
         color: #ffffff;
-        opacity: 0.5;
         font-family: "Poppins";
+        font-size: 24px;
+        letter-spacing: -0.67px;
+        line-height: 36px;
         margin-top: 16px;
+        opacity: 0.5;
+        padding-left: 326px;
         position: relative;
         top: -5px;
-        padding-left: 326px;
         width: 78%;
-        font-size: 24px;
-        line-height: 36px;
-        letter-spacing: -0.67px;
       }
     }
   
     &::before {
-      display: block;
-      content: " ";
-      width: 60px;
-      height: 4px;
-      border-radius: 2px;
       background-color: #4cb480;
+      border-radius: 2px;
+      content: " ";
+      display: block;
+      height: 4px;
+      left: 325px;
       position: relative;
       top: 220px;
-      left: 325px;
+      width: 60px;
     }
   }

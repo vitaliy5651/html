@@ -25,6 +25,9 @@
     "sass": "^1.29.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "babel-loader": "^8.2.2",
     "browser-sync": "^2.26.13",
     "browsersync": "0.0.1-security",
     "cssnano": "^4.1.10",
@@ -36,6 +39,8 @@
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-config-recommended-scss": "^4.2.0",
     "stylelint-order": "^4.1.0",
-    "stylelint-scss": "^3.18.0"
+    "stylelint-scss": "^3.18.0",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0"
   }
 }

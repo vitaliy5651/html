@@ -1,13 +1,13 @@
 .social-icons {
+    bottom: 61px;
     margin-left: 20px;
     margin-left: 1173px;
     position: relative;
-    bottom: 61px;
     &__list {
         display: flex;
+        list-style-type: none;
         margin: 0;
         padding: 0;
-        list-style-type: none;
 
         &-item1 {
             margin: 0 5px;
