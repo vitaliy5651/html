@@ -1,2 +1,3 @@
-const a =5;
-const b = () => console.log('Hello');
+import './components/a';
+import './components/b';
+import './components/c';
