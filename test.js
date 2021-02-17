@@ -22,3 +22,20 @@ var nums3 = nums1.concat(nums2);
 nums3.sort();
 nums3.splice(0,4);
 console.log(nums3);
+
+
+
+class Person{
+    constructor(name){
+       this.name = name;
+    }
+
+    greet(){
+        return `Hello ${this.name}`
+    }
+
+}
+    const John = new Person ('Jhon');
+    John.greet();
+
+    

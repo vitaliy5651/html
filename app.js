@@ -81,8 +81,48 @@ app.get('/login', function(req,res){
     res.render('login');
 });
 
+app.get('/admin', function(req, res) {
+    client.query('SELECT * from siteData', (err, response) => {
+        if (!err) {
+            console.log(response.rows[0]);
+            res.render('admin', response.rows[0]);
+        }
+    });
+
+    
+});
+
+
 app.post('/login', function(req,res){
-// 
+    if (true) {
+        res.redirect('/admin');
+    }
+});
+
+
+const items = [
+    {
+        id: 1,
+        name: 'Pizza 1',
+        price: '15',
+        image: 'https://i.pinimg.com/originals/88/2b/c4/882bc48d3d1d88ca63969ec7ad09406a.jpg'
+    },
+    {
+        id: 2,
+        name: 'Pizza 2',
+        price: '20',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg'
+    },
+    {
+        id: 3,
+        name: 'Pizza 3',
+        price: '30',
+        image: 'https://1000.menu/img/content-v2/63/46/809/pitstsa-domashnyaya_1591686572_16_max.jpg'
+    },
+];
+
+app.get('/cart', function(req,res){
+    res.render('cart',{items: items});
 });
 
 app.listen(3000, function() {
