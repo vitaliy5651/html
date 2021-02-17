@@ -82,10 +82,21 @@ app.get('/login', function(req,res){
 });
 
 app.post('/login', function(req,res){
-// 
+    client.query('SELECT * from siteData', (err, response) => {
+        if (!err) {
+            console.log(response.rows[0]);
+            res.render('admin', response.rows[0]);
+        }
+    });
 });
 
-app.listen(3000, function() {
+app.post('/login', function(req, res) {
+    if (true) {
+        res.redirect('/admin');
+    }
+});
+
+app.listen(3001, function() {
     console.log('success');
 });
 
