@@ -125,7 +125,7 @@ app.get('/cart', function(req,res){
     res.render('cart',{items: items});
 });
 
-app.listen(3000, function() {
+app.listen(3001, function() {
     console.log('success');
 });
 
