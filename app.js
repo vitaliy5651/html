@@ -94,6 +94,12 @@ app.get('/admin', function(req, res) {
 
 
 app.post('/login', function(req,res){
+    client.query('SELECT * from siteData', (err, response) => {
+        if (!err) {
+            console.log(response.rows[0]);
+            res.render('admin', response.rows[0]);
+        }
+    });
     if (true) {
         res.redirect('/admin');
     }
@@ -123,6 +129,12 @@ const items = [
 
 app.get('/cart', function(req,res){
     res.render('cart',{items: items});
+});
+
+app.post('/login', function(req, res) {
+    if (true) {
+        res.redirect('/admin');
+    }
 });
 
 app.listen(3001, function() {
