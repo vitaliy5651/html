@@ -25,17 +25,4 @@ console.log(nums3);
 
 
 
-class Person{
-    constructor(name){
-       this.name = name;
-    }
-
-    greet(){
-        return `Hello ${this.name}`
-    }
-
-}
-    const John = new Person ('Jhon');
-    John.greet();
-
     

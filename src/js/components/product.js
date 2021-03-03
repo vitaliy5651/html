@@ -2,10 +2,11 @@ import {Cart} from './cart';
 
 
 document.addEventListener('DOMContentLoader',() =>{
-    const cart = document.querySelector('#cart');
+    const cartBtn = document.querySelector('#cart');
     const products = document.querySelector('.products');
+    const badge = document.querySelector('#badge');
 
-    const Cart = new Cart();
+    const cart = new Cart();
 
     products.addEventListener('click', (event) =>{
         if(event.target.nodeName === 'BUTTON' && event.target.dataset.id){

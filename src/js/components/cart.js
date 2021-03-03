@@ -1,12 +1,9 @@
 export class Cart{
    constructor(){
-       this.items = [
-           {'1' : 3},
-           {'2': 1}
-       ];
+       this.items = [];
     }
     countItem(){
-        return this.items.length;
+        return this.item.length;
     }
 
     getItemList(){
@@ -20,5 +17,5 @@ export class Cart{
     removeItem(index){
         this.items.splice(index,1);
     }
+ }
 
-}
