@@ -12,7 +12,8 @@ const webpackConfig = require('./webpack.dev.js');
 function js(){
     return gulp.src('src/js/index.js')
     .pipe(webpackStream(webpackConfig), webpack)
-    .pipe(gulp.dest('./public/js'));
+    .pipe(gulp.dest('./public/js'))
+    .pipe(browserSync.stream());
 }
 
 function fonts(){
@@ -39,6 +40,7 @@ function watch() {
     fonts();
     style();
     js();
+    gulp.watch('src/js/**/*.js', js);
     gulp.watch('src/scss/**/*.scss', style)
     gulp.watch('index.html').on('change', browserSync.reload);
 }

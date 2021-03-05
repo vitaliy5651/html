@@ -4,3 +4,4 @@ document.addEventListener('DOMContentloaded',() =>{
     new Glide('.glide').mount();
     
 });
+
