@@ -1,21 +1,22 @@
-export class Cart{
-   constructor(){
-       this.items = [];
-    }
-    countItem(){
-        return this.item.length;
+export class Cart {
+    constructor() {
+        this.items = [];
     }
 
-    getItemList(){
+    countItem() {
+        return this.items.length;
+    }
+
+    getItemList() {
         return this.items;
     }
 
-    addItem(item){
+    addItem(item) {
         this.items.push(item);
     }
 
-    removeItem(index){
-        this.items.splice(index,1);
+    removeItem(index) {
+        this.items.splice(index, 1);
     }
- }
+}
 
