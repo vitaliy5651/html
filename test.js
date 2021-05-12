@@ -23,6 +23,30 @@ nums3.sort();
 nums3.splice(0,4);
 console.log(nums3);
 
+function test(arr){
+arr.forEach(function(el, i) {
+if(i % 2 !==0){
+
+}
+});
+
+}
 
 
+const o = {
+    test: 6,
+    ololo: 'qwerty',
+    name: 'John'
+}
+
+function up(obj) {
+	const res = {};
+
+  for (p in obj) {
+    res[String(p).toUpperCase()] = obj[p];
+  }  
+	console.log(res);
+
+}
+up(o);
     

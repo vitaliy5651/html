@@ -1,4 +1,5 @@
 import { Cart } from './cart';
+import { store } from './store';
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -12,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (event.target.nodeName === 'BUTTON' && event.target.dataset.id) {
             cart.addItem(event.target.dataset.id);
             badge.innerText = cart.countItem();
-            console.log(cart.getItemList());
+            store.dispatch({ type: 'addToCart' });
         }
     })
 
