@@ -1,10 +1,12 @@
+import { store } from './store';
+
 export class Cart {
     constructor() {
         this.items = [];
-    }
+    } 
 
     countItem() {
-        return this.items.length;
+        return store.getState().cartCounter;
     }
 
     getItemList() {
@@ -13,10 +15,10 @@ export class Cart {
 
     addItem(item) {
         this.items.push(item);
+        store.dispatch({ type: 'addToCart' })
     }
 
     removeItem(index) {
         this.items.splice(index, 1);
     }
 }
-
