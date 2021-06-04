@@ -8,5 +8,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
         cont.style.maxHeight = cont.classList.contains('show') ? calcHeight+'px'  : '0';
     })
-
 })
