@@ -4,3 +4,4 @@ import './components/slider';
 import './components/store';
 import './components/filter';
 import './components/rx';
+import './components/collapse';

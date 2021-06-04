@@ -1574,6 +1574,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
+/***/ "./src/js/components/collapse.js":
+/*!***************************************!*\
+  !*** ./src/js/components/collapse.js ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("document.addEventListener('DOMContentLoaded', function () {\n  var btn = document.querySelector('.collapse-button');\n  btn.addEventListener('click', function () {\n    var cont = document.querySelector('.collapse-content');\n    cont.classList.toggle('show');\n    var calcHeight = cont.offsetHeight;\n    cont.style.maxHeight = cont.classList.contains('show') ? calcHeight + 'px' : '0';\n  });\n});\n\n//# sourceURL=webpack:///./src/js/components/collapse.js?");
+
+/***/ }),
+
 /***/ "./src/js/components/filter.js":
 /*!*************************************!*\
   !*** ./src/js/components/filter.js ***!
@@ -1642,7 +1653,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_cart__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/cart */ \"./src/js/components/cart.js\");\n/* harmony import */ var _components_product__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/product */ \"./src/js/components/product.js\");\n/* harmony import */ var _components_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/slider */ \"./src/js/components/slider.js\");\n/* harmony import */ var _components_store__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/store */ \"./src/js/components/store.js\");\n/* harmony import */ var _components_filter__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/filter */ \"./src/js/components/filter.js\");\n/* harmony import */ var _components_rx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/rx */ \"./src/js/components/rx.js\");\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_cart__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/cart */ \"./src/js/components/cart.js\");\n/* harmony import */ var _components_product__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/product */ \"./src/js/components/product.js\");\n/* harmony import */ var _components_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/slider */ \"./src/js/components/slider.js\");\n/* harmony import */ var _components_store__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/store */ \"./src/js/components/store.js\");\n/* harmony import */ var _components_filter__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/filter */ \"./src/js/components/filter.js\");\n/* harmony import */ var _components_rx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/rx */ \"./src/js/components/rx.js\");\n/* harmony import */ var _components_collapse__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/collapse */ \"./src/js/components/collapse.js\");\n/* harmony import */ var _components_collapse__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_components_collapse__WEBPACK_IMPORTED_MODULE_6__);\n\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ })
 

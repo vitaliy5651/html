@@ -6,3 +6,19 @@ body {
     font-family: "Poppins", "Arial", sans-serif;
     margin: 0;
 }
+.hide {
+    display: none;
+}
+
+.collapse-content {
+    border: 1px solid white;
+    position: relative;
+    overflow: hidden;
+    transition: all .3s;
+
+    &.show {
+        transition: all .3s;
+        height: auto;
+    }
+
+}
