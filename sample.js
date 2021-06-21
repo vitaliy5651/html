@@ -31,3 +31,45 @@ continue;
 }
 }
 }
+
+
+// Задача 1 21.06
+
+let arr = [1,2,3,4,5,5,5,6,6,7,7];
+
+
+function test(arr){
+    let result = [];
+for(let elem of arr){
+if(!arr.includes(elem)){
+result.push(elem);
+}
+}
+console.log(result);
+return result;
+}
+test();
+
+
+
+//Задача 2 21.06 'Рекурсия'
+let arr = '[{}]{()}[](){[]}{[]}';
+
+function test2(str){
+    let copy = str;
+    let check = copy.length;
+    copy = copy.replace(/\(\)|\{\}|\[\]/gi, '');
+    console.log(copy);
+    if(check !== copy.length && copy.length > 1){
+     test(copy);
+    }else if(copy.length === 0){
+        console.log(true);
+      return true
+    }else{
+        console.log(false);
+        return false
+    }
+}
+test2();
+
+//Функция вызывается всегда в контексте какого-либо объекта
