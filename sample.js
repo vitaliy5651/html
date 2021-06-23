@@ -73,3 +73,20 @@ function test2(str){
 test2();
 
 //Функция вызывается всегда в контексте какого-либо объекта
+
+// === - строгое сравнение с привидением типов
+// == - не строгое сравнение без привидения типов
+
+
+// Задача 1 23.06.2021
+const movies = [{id: 1, title: 'Star wars'},{id:2, title: 'Avatar'}];
+const likes = [1,3,4,6,8,9,5];
+
+function getLiked(movies, Likes){
+    let newArr = movies.filter(function (el){
+        return likes.includes(el.id);
+    });
+    return newArr;
+}
+
+
